@@ -1,13 +1,13 @@
 import PropTypes from 'prop-types';
 export default function StatisticCard({label, percentage}){
     return(
-        <li class="item">
-            <span class="label">.docx</span>
-            <span class="percentage">4%</span>
+        <li className="item">
+            <span className="label">{label}</span>
+            <span className="percentage">{percentage}</span>
         </li>
     )
 }
-StatisticCard.PropTypes  ={
+StatisticCard.protoTypes  ={
     label: PropTypes.string.isRequired,
     percentage: PropTypes.number.isRequired,
 }
