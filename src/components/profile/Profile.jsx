@@ -7,6 +7,7 @@ export default function Profile({username, tag, location, avatar, followers, vie
         src={avatar||"https://cdn-icons-png.flaticon.com/512/1077/1077012.png"}
         alt="User avatar"
         className="avatar"
+        width={200}
         />
         <p className="name">{username}</p>
         <p className="tag">@{tag}</p>

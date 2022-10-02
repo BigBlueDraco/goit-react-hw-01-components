@@ -1,7 +1,7 @@
-import Profile from "./profile/Profile";
+import Profile from "./Profile/Profile";
 import user from "../user.json"
+const {username, tag, location, avatar, stats:{followers, views, likes}} = user;
 export const App = () => {
-  const {username, tag, location, avatar, stats:{followers, views, likes}} = user;
   return (
     <Profile 
     username = {username}
