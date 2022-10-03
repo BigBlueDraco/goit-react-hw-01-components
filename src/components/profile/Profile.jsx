@@ -1,20 +1,24 @@
 import PropTypes from 'prop-types';
+import css from "components/Profile/profile.module.css"
 export default function Profile({username, tag, location, avatar, followers, views, likes}){
    return (
-    <div className="profile">
-    <div className="description">
+    <div className={css.profile}>
+    <div className={css.description}>
         <img
         src={avatar||"https://cdn-icons-png.flaticon.com/512/1077/1077012.png"}
         alt="User avatar"
         className="avatar"
         width={200}
         />
-        <p className="name">{username}</p>
-        <p className="tag">@{tag}</p>
-        <p className="location">{location}</p>
+        <div className={css.userInfo}>
+            <p className="name">{username}</p>
+            <p className="tag">@{tag}</p>
+            <p className="location">{location}</p>
+        </div>
+        
     </div>
 
-    <ul className="stats">
+    <ul className={css.stats}>
         <li>
             <span className="label">Followers</span>
             <span className="quantity">{followers}</span>
@@ -27,7 +31,7 @@ export default function Profile({username, tag, location, avatar, followers, vie
             <span className="label">Likes</span>
             <span className="quantity">{likes}</span>
         </li>
-        </ul>
+    </ul>
     </div>
    )  
 }

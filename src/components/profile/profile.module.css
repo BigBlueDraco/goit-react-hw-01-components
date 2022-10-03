@@ -1,0 +1,46 @@
+.profile {
+  width: 400px;
+}
+.avatar {
+  flex-shrink: 0;
+  width: 50%;
+}
+.description {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  width: 100%;
+}
+.userInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-shrink: 0;
+  width: 50%;
+}
+
+.userInfo > p {
+  flex-basis: 33%;
+}
+.stats {
+  width: 100%;
+  min-height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.stats > li {
+  padding: 20px 30px;
+  flex-wrap: wrap;
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+}
+.stats > li:nth-last-child(odd) {
+  background-color: aquamarine;
+}
+
+.stats > li:nth-last-child(even) {
+  background-color: aqua;
+}
