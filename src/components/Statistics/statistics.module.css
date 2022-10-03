@@ -1,0 +1,31 @@
+.statistics {
+  width: 400px;
+}
+.title {
+  text-align: center;
+}
+.statList {
+  width: 100%;
+  min-height: 50px;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.statList > li {
+  border-radius: 10px;
+  background-color: aqua;
+  padding: 20px 0px;
+  display: flex;
+  flex-shrink: 0;
+  flex-basis: 33%;
+  justify-content: center;
+  align-items: center;
+}
+.statList > li:nth-last-child(odd) {
+  background-color: aquamarine;
+}
+
+.statList > li:nth-last-child(even) {
+  background-color: aqua;
+}

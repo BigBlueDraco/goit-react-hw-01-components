@@ -1,12 +1,13 @@
 import PropTypes from 'prop-types';
 import StatisticCard from 'components/StatisticCard/StatisticCard';
+import css from "./statistics.module.css"
 export default function Statistics({title, statistics}){
     return(
         
-    <section className="statistics">
-    <h2 className="title">{title}</h2>
+    <section className={css.statistics}>
+    <h2 className={css.title}>{title}</h2>
 
-    <ul className="stat-list">
+    <ul className={css.statList}>
         {statistics.map(({id, label, percentage}) =>(
             <StatisticCard 
             key={id}

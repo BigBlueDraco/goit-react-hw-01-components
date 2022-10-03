@@ -30,7 +30,9 @@
   align-items: center;
 }
 .stats > li {
+  border-radius: 10px;
   padding: 20px 30px;
+
   flex-wrap: wrap;
   display: flex;
   flex-shrink: 0;
