@@ -1,0 +1,17 @@
+.transactionHistory {
+  width: 500px;
+}
+.transactionHistory thead {
+  background-color: blue;
+}
+.transactionHistory tr > td {
+  text-align: center;
+  border-radius: 5px;
+}
+.transactionHistory > tbody > tr:nth-child(odd) > td {
+  background: aqua;
+}
+
+.transactionHistory > tbody > tr:nth-child(even) > td {
+  background: aquamarine;
+}
